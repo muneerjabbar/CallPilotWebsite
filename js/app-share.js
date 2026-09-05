@@ -1,5 +1,4 @@
 (function () {
-  // Placeholder Play Store listing — update when published
   var PLAY_STORE =
     'https://play.google.com/store/apps/details?id=com.callpilot.callpilot';
   var ua = navigator.userAgent || navigator.vendor || '';
@@ -11,6 +10,10 @@
   var statusEl = document.getElementById('status');
   var iosEl = document.getElementById('ios-soon');
   var playBtn = document.getElementById('play-btn');
+
+  if (playBtn) {
+    playBtn.href = PLAY_STORE;
+  }
 
   if (isIos) {
     statusEl.classList.add('hidden');
@@ -24,6 +27,7 @@
     return;
   }
 
-  statusEl.textContent = 'Available now on Android.... iOS is coming soon, Stay Tuned !!!';
+  statusEl.textContent =
+    'CallPilot is available on Google Play. iOS is coming soon — stay tuned!';
   playBtn.classList.remove('hidden');
 })();
