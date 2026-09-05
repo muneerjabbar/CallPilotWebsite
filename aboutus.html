@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us – CallPilot</title>
+  <meta name="description" content="About Gatepass Codex and CallPilot – a local-first call planning assistant." />
+  <link rel="icon" href="images/callpilot-logo.png" type="image/png" />
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --bg: #f1f5f9;
+      --paper: #ffffff;
+      --line: #dbe4ee;
+      --accent: #0d9488;
+      --accent-soft: #ccfbf1;
+      --gold: #b45309;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #ccfbf1 0%, transparent 55%),
+        radial-gradient(900px 400px at 100% 0%, #e0f2fe 0%, transparent 50%),
+        var(--bg);
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+
+    header {
+      margin-bottom: 1.75rem;
+      padding-bottom: 1.35rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+    }
+
+    h1 {
+      margin: 0 0 0.55rem;
+      font-size: clamp(1.85rem, 4.5vw, 2.4rem);
+      line-height: 1.15;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .tagline {
+      margin: 0;
+      color: var(--gold);
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    section {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero {
+      background: linear-gradient(160deg, var(--accent-soft) 0%, var(--paper) 70%);
+      border-color: #99f6e4;
+    }
+
+    h2 {
+      margin: 0 0 0.7rem;
+      font-size: 1.15rem;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    p {
+      color: var(--ink);
+      margin: 0 0 0.75rem;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul.actions {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul.actions li {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+      padding: 0.7rem 0.8rem;
+      background: var(--bg);
+      border-radius: 10px;
+      border: 1px solid var(--line);
+    }
+
+    ul.actions li:last-child { margin-bottom: 0; }
+
+    .emoji {
+      flex: 0 0 auto;
+      font-size: 1.15rem;
+      line-height: 1.4;
+    }
+
+    .contact-box {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem 1rem;
+      margin-top: 0.85rem;
+      padding: 0.9rem 1rem;
+      background: var(--accent-soft);
+      border-radius: 10px;
+      border: 1px solid #99f6e4;
+    }
+
+    .contact-box strong {
+      color: var(--accent);
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    .closing {
+      text-align: center;
+      font-weight: 700;
+      color: var(--accent);
+      margin-top: 0.35rem;
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .page-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem 1.15rem;
+      margin: 0.85rem 0 0;
+      font-size: 0.95rem;
+    }
+
+    .get-app {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff !important;
+      text-decoration: none !important;
+      font-weight: 800;
+    }
+
+    .share-app {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      min-height: 44px;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--accent);
+      color: var(--accent) !important;
+      text-decoration: none !important;
+      font-weight: 800;
+    }
+
+    .share-icon {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="brand"><a href="index.html" style="color: inherit; text-decoration: none;">Gatepass Codex · CallPilot</a></p>
+      <h1>About Us</h1>
+      <p class="tagline">Building Technology That Benefits Communities</p>
+      <p class="page-links">
+        <a class="get-app" href="app.html">Get the app</a>
+        <a class="share-app" href="app.html" data-share-app>Share App</a>
+        <a href="index.html">Home</a>
+        <a href="help.html">Help</a>
+      </p>
+    </header>
+
+    <section class="hero">
+      <h2>Who we are</h2>
+      <p>
+        At Gatepass Codex, we believe technology should make a meaningful difference in people's lives.
+      </p>
+      <p>
+        We build applications that solve real-world problems and serve individuals, families, and communities.
+        Some of our projects are developed as community initiatives through volunteer efforts, while others are
+        commercial products that help sustain our mission and enable us to create even more useful solutions.
+      </p>
+      <p>
+        CallPilot was created with a simple goal—to help people plan important calls, remember who to connect with,
+        and stay organized without giving up control of their data.
+      </p>
+    </section>
+
+    <section>
+      <h2>Help This Initiative Grow</h2>
+      <p>If you find this app beneficial, you can support us by:</p>
+      <ul class="actions">
+        <li>
+          <span class="emoji" aria-hidden="true">⭐</span>
+          <span>Sharing the app with family and friends using <a href="app.html" data-share-app>Share App</a> or <a href="app.html">this install link</a>.</span>
+        </li>
+        <li>
+          <span class="emoji" aria-hidden="true">📞</span>
+          <span>Using CallPilot for the calls that matter — family, clients, and follow-ups.</span>
+        </li>
+        <li>
+          <span class="emoji" aria-hidden="true">💬</span>
+          <span>Sending us your suggestions and feedback.</span>
+        </li>
+      </ul>
+      <p style="margin-top: 1rem;">
+        Every person who finds CallPilot useful helps us keep improving tools that respect privacy.
+      </p>
+    </section>
+
+    <section>
+      <h2>We'd Love to Hear From You</h2>
+      <p>
+        Your ideas, suggestions, and feedback help us improve.
+      </p>
+      <p>
+        Whether you've found a bug, have a feature request, or simply want to share your thoughts,
+        we'd be delighted to hear from you.
+      </p>
+      <h2 style="margin-top: 1.1rem;">Contact Us</h2>
+      <div class="contact-box">
+        <strong>Email</strong>
+        <a href="mailto:gatepass.codex@gmail.com">gatepass.codex@gmail.com</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Our Commitment</h2>
+      <p>
+        We are committed to building reliable, user-friendly, and impactful applications that serve people
+        with sincerity, quality, and purpose.
+      </p>
+      <p>
+        Thank you for being part of this journey and for helping us build technology that benefits communities.
+      </p>
+      <p class="closing">Together, let's create solutions that make a positive difference.</p>
+    </section>
+
+    <footer>
+      <p class="page-links" style="justify-content: center;">
+        <a href="app.html">Get the app</a>
+        <a href="app.html" data-share-app>Share App</a>
+        <a href="index.html">Home</a>
+        <a href="help.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+      </p>
+      © Gatepass Codex · CallPilot
+    </footer>
+  </main>
+  <script src="js/share-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Help – CallPilot</title>
+  <meta name="description" content="How to use CallPilot – call plans, contacts, groups, reminders, and voice messages." />
+  <link rel="icon" href="images/callpilot-logo.png" type="image/png" />
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --bg: #f1f5f9;
+      --paper: #ffffff;
+      --line: #dbe4ee;
+      --accent: #0d9488;
+      --accent-soft: #ccfbf1;
+      --gold: #b45309;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #ccfbf1 0%, transparent 55%),
+        radial-gradient(900px 400px at 100% 0%, #e0f2fe 0%, transparent 50%),
+        var(--bg);
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+
+    header {
+      margin-bottom: 1.75rem;
+      padding-bottom: 1.35rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+    }
+
+    h1 {
+      margin: 0 0 0.55rem;
+      font-size: clamp(1.85rem, 4.5vw, 2.4rem);
+      line-height: 1.15;
+      font-weight: 800;
+    }
+
+    .tagline {
+      margin: 0;
+      color: var(--gold);
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    nav.toc {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    nav.toc h2 {
+      margin: 0 0 0.6rem;
+      font-size: 1rem;
+      color: var(--accent);
+    }
+
+    nav.toc ol {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    nav.toc li { margin-bottom: 0.3rem; }
+
+    section {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1rem;
+      scroll-margin-top: 1rem;
+    }
+
+    .hero {
+      background: linear-gradient(160deg, var(--accent-soft) 0%, var(--paper) 70%);
+      border-color: #99f6e4;
+    }
+
+    h2 {
+      margin: 0 0 0.7rem;
+      font-size: 1.15rem;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    h3 {
+      margin: 1rem 0 0.45rem;
+      font-size: 1rem;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    p, li {
+      color: var(--ink);
+      margin: 0 0 0.75rem;
+    }
+
+    p:last-child, ul:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 0 0 0.75rem;
+      padding-left: 1.2rem;
+    }
+
+    li { margin-bottom: 0.4rem; }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    .tip {
+      margin-top: 0.85rem;
+      padding: 0.75rem 0.9rem;
+      background: var(--accent-soft);
+      border-radius: 10px;
+      border: 1px solid #99f6e4;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .page-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem 1.15rem;
+      margin: 0.85rem 0 0;
+      font-size: 0.95rem;
+    }
+
+    .get-app {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff !important;
+      text-decoration: none !important;
+      font-weight: 800;
+    }
+
+    .share-app {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      min-height: 44px;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--accent);
+      color: var(--accent) !important;
+      text-decoration: none !important;
+      font-weight: 800;
+    }
+
+    .share-icon {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="brand"><a href="index.html" style="color: inherit; text-decoration: none;">CallPilot</a></p>
+      <h1>Help</h1>
+      <p class="tagline">How to use CallPilot — plan calls, remember people, and stay connected</p>
+      <p class="page-links">
+        <a class="get-app" href="app.html">Get the app</a>
+        <a class="share-app" href="app.html" data-share-app>Share App</a>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+      </p>
+    </header>
+
+    <section class="hero">
+      <h2>Welcome</h2>
+      <p>
+        CallPilot helps you plan important calls, organize contacts into groups, set reminders,
+        and prepare short voice messages. Everything stays on your device — no account required.
+      </p>
+      <p>
+        Use the main tabs for Plans, Contacts, Groups, and Voice Messages. Allow notifications
+        so reminders can reach you on time.
+      </p>
+    </section>
+
+    <nav class="toc" aria-label="Help topics">
+      <h2>Quick topics</h2>
+      <ol>
+        <li><a href="#getting-started">Getting started</a></li>
+        <li><a href="#plans">Call plans &amp; reminders</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#groups">Groups</a></li>
+        <li><a href="#voice">Voice messages</a></li>
+        <li><a href="#calling">Calling &amp; conferences</a></li>
+        <li><a href="#settings">Settings &amp; permissions</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#tips">Tips &amp; contact</a></li>
+      </ol>
+    </nav>
+
+    <section id="getting-started">
+      <h2>Getting started</h2>
+      <ul>
+        <li>Complete onboarding and grant the permissions you need (contacts, notifications, microphone).</li>
+        <li>Import or add contacts you want to call regularly.</li>
+        <li>Create your first call plan with a date and time.</li>
+      </ul>
+      <p class="tip">
+        You can deny a permission and still use other features. CallPilot will show how to enable it later in Settings.
+      </p>
+    </section>
+
+    <section id="plans">
+      <h2>Call plans &amp; reminders</h2>
+      <p>Create a plan for a contact or group, set when you want to be reminded, and track status as you go.</p>
+      <ul>
+        <li>When a reminder fires, use <strong>Call</strong>, <strong>Snooze</strong>, or <strong>Dismiss</strong>.</li>
+        <li>Snooze options typically include 5, 15, 30, or 60 minutes.</li>
+        <li>Mark plans as called, completed, missed, or cancelled as needed.</li>
+      </ul>
+    </section>
+
+    <section id="contacts">
+      <h2>Contacts</h2>
+      <p>
+        Browse and manage the people you call. With contacts permission, you can import from your device address book.
+      </p>
+      <ul>
+        <li>Open a contact to start a plan or place a call via the system dialer.</li>
+        <li>Keep notes and context that help you remember why the call matters.</li>
+      </ul>
+    </section>
+
+    <section id="groups">
+      <h2>Groups</h2>
+      <p>Organize contacts into groups — for example family, clients, or a project team.</p>
+      <ul>
+        <li>Create a group and add members.</li>
+        <li>Plan calls against a whole group when you need a sequence or shared follow-up.</li>
+      </ul>
+    </section>
+
+    <section id="voice">
+      <h2>Voice messages</h2>
+      <p>
+        Record a short message (up to <strong>25 seconds</strong>) and schedule a guided workflow for when to play it.
+      </p>
+      <ul>
+        <li>Grant microphone permission when recording.</li>
+        <li>At reminder time, CallPilot guides you: call → play on speaker → continue to the next recipient.</li>
+      </ul>
+      <p class="tip">
+        Mobile platforms do not allow third-party apps to inject audio into a live cellular call.
+        CallPilot uses an honest guided flow instead of pretending unsupported automation succeeded.
+      </p>
+    </section>
+
+    <section id="calling">
+      <h2>Calling &amp; conferences</h2>
+      <ul>
+        <li>CallPilot opens your phone’s dialer (or places a call when permission and platform allow).</li>
+        <li>For conferences, follow the in-app guidance and use your Phone app’s <strong>Merge Calls</strong> control.</li>
+      </ul>
+    </section>
+
+    <section id="settings">
+      <h2>Settings &amp; permissions</h2>
+      <h3>Theme</h3>
+      <ul>
+        <li>Choose light, dark, or system theme.</li>
+      </ul>
+      <h3>Reminders</h3>
+      <ul>
+        <li>Keep notification and exact-alarm permissions enabled for reliable reminders on Android.</li>
+        <li>Set a default snooze duration.</li>
+      </ul>
+      <h3>Permissions</h3>
+      <ul>
+        <li><strong>Contacts</strong> — import people.</li>
+        <li><strong>Notifications</strong> — call and voice reminders.</li>
+        <li><strong>Microphone</strong> — record voice messages.</li>
+        <li><strong>Phone</strong> — optional direct calling where supported.</li>
+      </ul>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy</h2>
+      <p>
+        CallPilot is local-first: no login and no CallPilot cloud sync. Plans, contacts you manage in-app,
+        and recordings stay on your device. See the full
+        <a href="privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <section id="tips">
+      <h2>Tips &amp; contact</h2>
+      <ul>
+        <li>Allow notifications so reminders are not delayed by battery savers.</li>
+        <li>Keep the app updated from the store for fixes and improvements.</li>
+        <li>Share the install page: <a href="app.html">Get CallPilot</a>.</li>
+      </ul>
+      <p>
+        Need more help? Email
+        <a href="mailto:gatepass.codex@gmail.com">gatepass.codex@gmail.com</a>
+        with your question, device type, and a short description of the issue.
+      </p>
+    </section>
+
+    <footer>
+      <p class="page-links" style="justify-content: center;">
+        <a href="app.html">Get the app</a>
+        <a href="app.html" data-share-app>Share App</a>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="privacy.html">Privacy</a>
+      </p>
+      © Gatepass Codex · CallPilot — Help Centre
+    </footer>
+  </main>
+  <script src="js/share-app.js"></script>
+</body>
+</html>

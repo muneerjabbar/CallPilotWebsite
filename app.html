@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get CallPilot</title>
+  <meta name="description" content="Install CallPilot — plan calls, set reminders, organize contacts, and schedule short voice messages." />
+  <meta property="og:title" content="Get CallPilot" />
+  <meta property="og:description" content="Plan. Remember. Connect. Your personal call-planning assistant." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CallPilot" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Get CallPilot" />
+  <meta name="twitter:description" content="Plan. Remember. Connect. Your personal call-planning assistant." />
+  <link rel="icon" href="images/callpilot-logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --paper: #f8fafc;
+      --accent: #0d9488;
+      --accent-deep: #0f766e;
+      --line: rgba(13, 148, 136, 0.18);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "Manrope", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(900px 480px at 12% -8%, #ccfbf1 0%, transparent 58%),
+        radial-gradient(700px 420px at 92% 8%, #e0f2fe 0%, transparent 52%),
+        linear-gradient(180deg, #f0fdfa 0%, var(--paper) 42%, #ecfeff 100%);
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+    }
+    .card {
+      width: min(28rem, 100%);
+      text-align: center;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 2.1rem 1.5rem 1.75rem;
+      box-shadow: 0 18px 40px rgba(15, 118, 110, 0.1);
+    }
+    .logo {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      box-shadow: 0 10px 24px rgba(15, 118, 110, 0.2);
+    }
+    h1 {
+      margin: 1rem 0 0.35rem;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.85rem;
+      color: var(--accent-deep);
+      letter-spacing: -0.02em;
+    }
+    .lead {
+      margin: 0 0 1.4rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .status {
+      margin: 0 0 1.25rem;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+    .soon {
+      color: var(--accent-deep);
+      font-size: 1.15rem;
+      padding: 0.9rem 1rem;
+      border-radius: 16px;
+      background: rgba(13, 148, 136, 0.08);
+      border: 1px solid var(--line);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      min-height: 48px;
+      padding: 0.7rem 1.3rem;
+      border-radius: 999px;
+      font-weight: 800;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(13, 148, 136, 0.28);
+    }
+    .btn:hover { background: var(--accent-deep); }
+    .btn svg { flex: none; }
+    .home {
+      display: inline-block;
+      margin-top: 1.15rem;
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .home:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="images/callpilot-logo.png" alt="CallPilot" width="88" height="88" />
+    <h1>CallPilot</h1>
+    <p class="lead">Plan. Remember. Connect. Your personal call-planning assistant.</p>
+    <p id="status" class="status">Opening the right store for your device…</p>
+    <p id="ios-soon" class="status soon hidden">iOS App Launching Soon, Stay Tuned!!!</p>
+    <!-- Placeholder Play Store link — replace when the listing is live -->
+    <a id="play-btn" class="btn hidden" href="https://play.google.com/store/apps/details?id=com.callpilot.callpilot">
+      <svg width="22" height="24" viewBox="0 0 512 566" role="img" aria-hidden="true" focusable="false">
+        <path fill="#00D2FF" d="M21 8C10 19 4 36 4 58v450c0 22 6 39 17 50l2 2 252-252v-6L23 6l-2 2z" />
+        <path fill="#FFCE00" d="M357 366l-84-84v-6l84-84 2 1 100 57c28 16 28 42 0 58l-100 57-2 1z" />
+        <path fill="#FF3A44" d="M359 365l-86-86L21 531c9 10 24 11 42 1l296-167" />
+        <path fill="#00E676" d="M359 193L63 26C45 16 30 17 21 27l252 252 86-86z" />
+      </svg>
+      Go To Google Play Store
+    </a>
+    <a class="home" href="index.html">Back to website</a>
+  </main>
+  <script src="js/app-share.js"></script>
+</body>
+</html>
