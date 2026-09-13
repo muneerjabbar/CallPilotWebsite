@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Help – CallPilot</title>
-  <meta name="description" content="How to use CallPilot – call plans, contacts, groups, reminders, and voice messages." />
+  <meta name="description" content="How to use CallPilot – call plans, contacts, groups, reminders, and call trees." />
   <link rel="icon" href="images/callpilot-logo.png" type="image/png" />
   <style>
     :root {
@@ -214,11 +214,10 @@
       <h2>Welcome</h2>
       <p>
         CallPilot helps you plan important calls, organize contacts into groups, set reminders,
-        and prepare short voice messages. Everything stays on your device — no account required.
+        and run call trees. Everything stays on your device — no account required.
       </p>
       <p>
-        Use the main tabs for Plans, Contacts, Groups, and Voice Messages. Allow notifications
-        so reminders can reach you on time.
+        Use the main tabs for Home, Plans, To Do, Call Tree, and SMS (Pro). Manage Contacts and Groups from Settings.
       </p>
     </section>
 
@@ -229,7 +228,8 @@
         <li><a href="#plans">Call plans &amp; reminders</a></li>
         <li><a href="#contacts">Contacts</a></li>
         <li><a href="#groups">Groups</a></li>
-        <li><a href="#voice">Voice messages</a></li>
+        <li><a href="#call-tree">Call Tree</a></li>
+        <li><a href="#sms">SMS (Pro)</a></li>
         <li><a href="#calling">Calling &amp; conferences</a></li>
         <li><a href="#settings">Settings &amp; permissions</a></li>
         <li><a href="#privacy">Privacy</a></li>
@@ -240,7 +240,7 @@
     <section id="getting-started">
       <h2>Getting started</h2>
       <ul>
-        <li>Complete onboarding and grant the permissions you need (contacts, notifications, microphone).</li>
+        <li>Complete onboarding and grant the permissions you need (contacts, notifications).</li>
         <li>Import or add contacts you want to call regularly.</li>
         <li>Create your first call plan with a date and time.</li>
       </ul>
@@ -262,7 +262,7 @@
     <section id="contacts">
       <h2>Contacts</h2>
       <p>
-        Browse and manage the people you call. With contacts permission, you can import from your device address book.
+        Manage contacts and groups from <strong>Settings</strong>. With contacts permission, you can import from your device address book.
       </p>
       <ul>
         <li>Open a contact to start a plan or place a call via the system dialer.</li>
@@ -279,18 +279,32 @@
       </ul>
     </section>
 
-    <section id="voice">
-      <h2>Voice messages</h2>
+    <section id="call-tree">
+      <h2>Call Tree</h2>
       <p>
-        Record a short message (up to <strong>25 seconds</strong>) and schedule a guided workflow for when to play it.
+        Schedule a sequence of calls to multiple people — from favorites, phone contacts, or a group
+        (group members are added individually; duplicates are skipped).
       </p>
       <ul>
-        <li>Grant microphone permission when recording.</li>
-        <li>At reminder time, CallPilot guides you: call → play on speaker → continue to the next recipient.</li>
+        <li>At reminder time, start the Call Tree flow.</li>
+        <li>Tap <strong>Call</strong> for each person in order (for example Call James, then Call Thomas).</li>
+        <li>Use <strong>Next</strong> after each call, then <strong>Finish</strong> when done.</li>
       </ul>
       <p class="tip">
-        Mobile platforms do not allow third-party apps to inject audio into a live cellular call.
-        CallPilot uses an honest guided flow instead of pretending unsupported automation succeeded.
+        CallPilot guides the sequence and opens your Phone app for each call. It cannot fully control
+        live cellular calls; when phone permission is granted, it places calls as directly as the OS allows.
+      </p>
+    </section>
+
+    <section id="sms">
+      <h2>SMS (CallPilot Pro)</h2>
+      <p>
+        In CallPilot Pro, open the SMS tab to select multiple contacts and groups, type a message,
+        and open your Messages app. You confirm Send — CallPilot does not send SMS silently.
+      </p>
+      <p class="tip">
+        Free CallPilot prompts you to install <a href="pro-app.html">CallPilot Pro</a> for SMS
+        and for unlimited plans, todos, groups, and call trees.
       </p>
     </section>
 
@@ -316,9 +330,8 @@
       <h3>Permissions</h3>
       <ul>
         <li><strong>Contacts</strong> — import people.</li>
-        <li><strong>Notifications</strong> — call and voice reminders.</li>
-        <li><strong>Microphone</strong> — record voice messages.</li>
-        <li><strong>Phone</strong> — optional direct calling where supported.</li>
+        <li><strong>Notifications</strong> — call plan and call tree reminders.</li>
+        <li><strong>Phone</strong> — optional; more direct calling in Call Tree where supported.</li>
       </ul>
     </section>
 
@@ -326,7 +339,7 @@
       <h2>Privacy</h2>
       <p>
         CallPilot is local-first: no login and no CallPilot cloud sync. Plans, contacts you manage in-app,
-        and recordings stay on your device. See the full
+        and call trees stay on your device. See the full
         <a href="privacy.html">Privacy Policy</a>.
       </p>
     </section>

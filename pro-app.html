@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get CallPilot Pro</title>
+  <meta name="description" content="Install CallPilot Pro — unlimited plans, call trees, SMS compose, and no Free limits." />
+  <meta property="og:title" content="Get CallPilot Pro" />
+  <meta property="og:description" content="Unlimited CallPilot with SMS compose. Plan. Remember. Connect." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CallPilot Pro" />
+  <link rel="icon" href="images/callpilot-pro-logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --paper: #f8fafc;
+      --accent: #0d9488;
+      --accent-deep: #0f766e;
+      --line: rgba(13, 148, 136, 0.18);
+      --pro: #f59e0b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "Manrope", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(900px 480px at 12% -8%, #fef3c7 0%, transparent 58%),
+        radial-gradient(700px 420px at 92% 8%, #ccfbf1 0%, transparent 52%),
+        linear-gradient(180deg, #fffbeb 0%, var(--paper) 42%, #ecfeff 100%);
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+    }
+    .card {
+      width: min(28rem, 100%);
+      text-align: center;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 2.1rem 1.5rem 1.75rem;
+      box-shadow: 0 18px 40px rgba(15, 118, 110, 0.1);
+    }
+    .logo {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      box-shadow: 0 10px 24px rgba(15, 118, 110, 0.2);
+    }
+    h1 {
+      margin: 1rem 0 0.35rem;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.85rem;
+      color: var(--accent-deep);
+      letter-spacing: -0.02em;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 0.35rem;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #f59e0b, #fbbf24);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .lead {
+      margin: 0.85rem 0 1.4rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .status {
+      margin: 0 0 1.25rem;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+    .soon {
+      color: var(--accent-deep);
+      font-size: 1.15rem;
+      padding: 0.9rem 1rem;
+      border-radius: 16px;
+      background: rgba(13, 148, 136, 0.08);
+      border: 1px solid var(--line);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      min-height: 48px;
+      padding: 0.7rem 1.3rem;
+      border-radius: 999px;
+      font-weight: 800;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(13, 148, 136, 0.28);
+    }
+    .btn:hover { background: var(--accent-deep); }
+    .home {
+      display: inline-block;
+      margin-top: 1.15rem;
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .home:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .hidden { display: none; }
+    .perks {
+      text-align: left;
+      margin: 0 0 1.25rem;
+      padding: 0 0.5rem;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="images/callpilot-pro-logo.png" alt="CallPilot Pro" width="88" height="88" />
+    <h1>CallPilot Pro</h1>
+    <span class="badge">Pro</span>
+    <p class="lead">Unlimited plans, call trees, groups, todos — plus SMS compose to multiple people.</p>
+    <ul class="perks">
+      <li>No Free-tier limits</li>
+      <li>SMS to contacts and groups (you confirm Send)</li>
+      <li>Same local-first privacy</li>
+    </ul>
+    <p id="status" class="status">Opening the right store for your device…</p>
+    <p id="ios-soon" class="status soon hidden">iOS App Launching Soon, Stay Tuned!!!</p>
+    <a id="play-btn" class="btn hidden" href="https://play.google.com/store/apps/details?id=com.callpilot.callpilot.pro" rel="noopener noreferrer" target="_blank">
+      Get it on Google Play
+    </a>
+    <a class="home" href="app.html">Free CallPilot</a>
+    ·
+    <a class="home" href="index.html">Website</a>
+  </main>
+  <script src="js/pro-app-share.js"></script>
+</body>
+</html>

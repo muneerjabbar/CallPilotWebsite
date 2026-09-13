@@ -10,7 +10,7 @@
     'With the app, you can:\n\n' +
     '• Schedule call reminders\n' +
     '• Organize contacts into groups\n' +
-    '• Record short voice messages (up to 25s)\n' +
+    '• Run guided call trees for multiple people\n' +
     '• Keep everything local on your device — no account needed\n\n' +
     'Install CallPilot:\n' +
     appUrl() +
